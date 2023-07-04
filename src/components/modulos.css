@@ -1,0 +1,165 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body{
+  background-color: rgb(246, 246, 246);
+}
+
+.div_imagem_capa img{
+ margin-bottom: -3.8px;
+ margin: auto;
+ display: block;
+}
+
+picture h2{
+  text-align: center;
+}
+
+.texto_art{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.titulo_corpo {
+  padding-left: 20mm;
+}
+.espaco_lados{
+  padding:  0px 2vw 2vw 2vw; 
+  
+}
+
+.imagemcapa{
+  max-width: 100%;
+}
+
+
+picture{
+  margin-right: 5mm;
+  background-color: rgb(115, 115, 252);
+  
+}
+
+article p{
+  margin-top: 50px;
+  padding-left: max(20px, 10%);
+  padding-right: max(20px, 10%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(1.5em * 0.875);
+  line-height: 1.6;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.ajustar_h1{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.margem-corpo {
+  margin-left: 5mm;
+  margin-right: 5mm;
+}
+.alinhar {
+  transform: translateY(110%);
+}
+
+
+
+.pagina_corpo{
+  padding: 0mm 20mm 0mm 20mm;
+  text-align: justify;
+}
+
+.art_animes h2, h3{
+  margin-top: 3mm;
+  margin-bottom: 3mm;
+}
+
+.container_art{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  background-color: rgb(210, 210, 246);
+  padding: 15px 0px 15px 18px;
+  /* cima direta baixo esquerda */  
+}
+
+@media (max-width: 1000px) {
+  .container_art{  
+      flex-wrap: wrap;
+
+  }
+  .container_art picture{
+      padding: 7px;
+      margin-left: 1px;
+  }
+  .art_animes h2, h3{
+      margin-top: 0mm;
+      margin-bottom: 0mm;
+  }
+  picture{
+      margin-top: 10px;
+  }
+  
+}
+
+.container_art picture{
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.container_art h2{
+  color: white;
+  font-size: max(29px, 2.5vw);  /*Viewport unit*/
+}
+
+
+
+.container_art picture:hover{
+  padding: 10px;
+}
+
+nav{
+  background-color: rgb(89, 89, 255);
+  text-align: center;
+  max-width: 1897px;
+  padding: max(10px, 1%, 2px, 1%, 2px, 1%, 2px, 1%);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+nav > a {
+  color: white;
+  font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+  padding-left: max(5px, 2%);
+  padding-right: max(5px, 2%);
+  padding-top: max(3px, 1%);
+  padding-bottom: max(3px, 1%);
+  font-size: max(18px, 1.7vw);
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(9, 22, 139);
+  outline: 5px solid black;
+ 
+}
+
+footer {
+  padding: 12px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
