@@ -9,7 +9,7 @@ function App() {
       <img className="imagemcapa" src={capa} alt="animes"/> 
         <div>
             <nav>
-                <a href="">Informações</a>
+                <a href="">Animes</a>
                 <a href="">Comédia</a>
                 <a href="">Drama</a>
                 <a href="">Romance</a>
