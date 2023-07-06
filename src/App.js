@@ -1,23 +1,20 @@
-import Comeco from './components/Comeco';
-import styles from './components/modulos.css'
-import capa from "./imagens/capaanimes.jpg"
+import CabecalhoPrincipal from './components/CabecalhoPrincipal';
+import TituloPrincipal from './components/TituloPrincipal';
+import BannersCorpo from './components/BannersCorpo';
 
 function App() {
   return (
-    <div className="App">
-      <div className="div_imagem_capa">
-      <img className="imagemcapa" src={capa} alt="animes"/> 
-        <div>
-            <nav>
-                <a href="">Animes</a>
-                <a href="">Comédia</a>
-                <a href="">Drama</a>
-                <a href="">Romance</a>
-            </nav>
-        </div>
+    <>
+      <CabecalhoPrincipal />
+      <div className="espaco_lados">
+        
+        <TituloPrincipal/>
+        <BannersCorpo />
+        
       </div>
-    </div>
-  );
-}
+    </>
+  )
+
+};
 
 export default App;
