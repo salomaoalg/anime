@@ -12,19 +12,19 @@ function BannersCorpo() {
             <section className="art_animes">
                 <div className="container_art">
 
-                    <picture>
+                    <picture className="picture_banner">
                         <source media="(max-width: 1000px)" srcset={one_piece_p} type="image/jpeg"/>
                         <a href="pages/index_anime_hunterxhunter.html" target="_blank"><img className="imagemcapa" src={one_piece_caracters} alt="personagens de one piece"/></a>
                         <h2>One Piece</h2>
                     </picture>
                     
-                    <picture>
+                    <picture className="picture_banner">
                         <source media="(max-width: 1000px)" srcset={dragon_ballz_p} type="image/jpg"/>
                         <img className="imagemcapa" src={dragon_ballz_normal} alt="personagens dragon ball Z"/>
                         <h2>Dragon Ball Z</h2>
                     </picture>
                             
-                    <picture>
+                    <picture className="picture_banner">
                         <source media="(max-width: 1000px)" srcset={hunterx_p} type="image/jpg"/>
                         <img className="imagemcapa" src={hunterx_normal} alt="personagens dragon ball Z"/>
                         <h2>Hunter x Hunter</h2>

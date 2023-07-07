@@ -39,16 +39,16 @@ picture h2{
 }
 
 
-picture{
+.picture_banner{
   margin-right: 5mm;
   background-color: rgb(115, 115, 252);
   
 }
 
 article p{
-  margin-top: 50px;
-  padding-left: max(20px, 10%);
-  padding-right: max(20px, 10%);
+  align-items: center;
+  padding-left: max(20px, 5%);
+  padding-right: max(20px, 5%);
   font-family: Arial, Helvetica, sans-serif;
   font-size: calc(1.5em * 0.875);
   line-height: 1.6;
@@ -83,7 +83,7 @@ article p{
   margin-bottom: 3mm;
 }
 
-.container_art{
+.container_art {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -93,12 +93,28 @@ article p{
   /* cima direta baixo esquerda */  
 }
 
+.container_corpo{
+  display: flex;
+  align-items: center;
+}
+.corpomargin{
+  max-width: 700px;
+}
+@media (max-width: 944px) {
+  .container_corpo{
+    flex-direction: column;
+    align-items: center;
+  }
+  .corpomargin{
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .container_art{  
       flex-wrap: wrap;
-
   }
-
+  
   .container_art picture{
       padding: 7px;
       margin-left: 1px;
@@ -163,6 +179,6 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif
 }
